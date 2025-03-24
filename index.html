@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Deep Polycuboid Fitting for Compact 3D Representation of Indoor Scenes</title>
+  <link rel="icon" type="image/x-icon" href="static/images/cube.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Deep Polycuboid Fitting for Compact 3D Representation of Indoor Scenes</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Gahye Lee</a> </span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hyejeong Yoon</a>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jungeon Kim</a>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Seungyong Lee</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">POSTECH<br>3DV 2024</span>
+<!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="static/pdfs/main.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/suppl.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="static/pdfs/poster.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Poster</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2503.14912" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding:0; overflow:hidden;">
+      <video poster="" id="tree" autoplay controls muted loop style =width:100%; height:100%; object-fit:cover;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser_slow.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered" style="padding-bottom:50px;">
+        The left video shows a point cloud representing a real-world space manually scanned using an iPhone, which served as the input for our method. The right video demonstrates our method reconstructing the same space by fitting polycuboids and applying Blender’s texture baking feature. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper presents a novel framework for compactly representing a 3D indoor scene using a set of polycuboids through a deep learning-based fitting method.
+            Indoor scenes mainly consist of man-made objects, such as furniture, which often exhibit rectilinear geometry. This property allows indoor scenes to be represented using combinations of polycuboids, providing a compact representation that benefits downstream applications like furniture rearrangement. Our framework takes a noisy point cloud as input and first detects six types of cuboid faces using a transformer network. Then, a graph neural network is used to validate the spatial relationships of the detected faces to form potential polycuboids. Finally, each polycuboid instance is reconstructed by forming a set of boxes based on the aggregated face labels. To train our networks, we introduce a synthetic dataset encompassing a diverse range of cuboid and polycuboid shapes that reflect the characteristics of indoor scenes. Our framework generalizes well to real-world indoor scene datasets, including Replica, ScanNet, and scenes captured with an iPhone. The versatility of our method is demonstrated through practical applications, such as virtual room tours and scene editing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Key Idea section -->
+<section class="section" style="padding-top:80px; padding-bottom:80px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+
+      <!-- Left Column: Image -->
+      <div class="column is-half has-text-centered" style="padding-right:60px;">
+        <img src="static/images/keyidea.png" alt="Key Idea Illustration" style="max-width:100%; height:auto;">
+      </div>
+
+      <!-- Right Column: Text -->
+      <div class="column is-half">
+        <h2 class="title is-3">Key Idea</h2>
+        <div class="content has-text-justified"> 
+          <ul>
+            <li>A polycuboid is composed of multiple cuboids. Thus, accurately inferring cuboid faces and their spatial relationships from a point cloud allows effective representation of complex polycuboid structures.</li>
+            <li>We leverage a Transformer network to precisely detect faces from the input point cloud, classifying each point according to one of six cuboid face types.</li>
+            <li>Detected faces are aggregated into individual polycuboid instances by inferring their spatial relationships using a Graph Neural Network (GNN).</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Key Idea section -->
+
+<!-- 연한 회색 구분선 -->
+<div style="width: 90%; height: 1px; background-color: #e0e0e0; margin: 0 auto;"></div>
+
+
+
+<!-- Single Image with Title -->
+<section class="method"  style="padding-top:0px; padding-bottom:50px;">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+
+      <!-- Title 추가 -->
+      <h2 class="title is-3 has-text-centered">	
+        Framework
+      </h2>
+
+      <!-- Image -->
+      <img src="static/images/method.JPG" alt="Your image description" style="max-width:100%; margin-top:1px;">
+
+      <!-- 이미지 설명 -->
+      <h3 class="subtitle is-5 has-text-centered", style="max-width:80%; margin: 1em auto 0 auto;  font-size: 1.1rem;">
+        Given a noisy point cloud of an indoor scene, we first detect polycuboid faces by classifying each 3D point into one of the six cuboid face labels using a Transformer network, while simultaneously predicting the face center offsets.
+Detected faces are then grouped into polycuboid instances based on the spatial relationships inferred by a Graph Convolutional Network (GCN). Finally, each polycuboid instance is reconstructed into a compact rectilinear mesh by assembling cuboids consistent with the aggregated face information.
+      </h3>
+
+    </div>
+  </div>
+</section>
+
+ 
+
+<!-- 연한 회색 구분선 -->
+<div style="width: 90%; height: 1px; background-color: #e0e0e0; margin: 0 auto;"></div>
+
+<!-- Video carousel -->
+<section class="hero is-small" >
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="margin-top: 40px">Another Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/editing.mp4"
+            type="video/mp4">
+          </video>
+		   <p class="has-text-centered" style="margin-top:10px;">Caption for Video 1</p>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/replica.mp4"
+            type="video/mp4">
+          </video>
+        </div> 
+      </div>
+	  <!-- 캡션 전용 공간 추가 -->
+      <div class="video-captions" style="margin-top:20px;">
+        <p class="has-text-centered">	 
+		The first video demonstrates how the fitted polycuboid can be used as a controller, enabling easy rearrangement of furniture.
+	
+		The second video demonstrates how the polycuboid shape can be stylized with fine resolution polycuboids.
+		</p> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title">Poster</h2>-->
+
+<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--          </iframe>-->
+<!--        -->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{lee2025deeppolycuboidfittingcompact,
+      title={Deep Polycuboid Fitting for Compact 3D Representation of Indoor Scenes},
+      author={Gahye Lee and Hyejeong Yoon and Jungeon Kim and Seungyong Lee},
+      year={2025},
+      eprint={2503.14912},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.14912},
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
